@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%; 
+            height: auto;
+        }
+
+        .price {
+            font-weight: bold;
+            color: green;
+        }
+
+        .add-to-cart {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover {
+            background: #4cae4c;
+        }
+
+        .explore-button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .explore-button:hover {
+            background: #4cae4c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submit-button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Furniture Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="sofa.jpg" alt="Comfy Sofa" class="product-image">
+                    <h3>Comfy Sofa</h3>
+                    <p>A comfortable and stylish sofa for your living room.</p>
+                    <p class="price">$499.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="dining-table.jpg" alt="Elegant Dining Table" class="product-image">
+                    <h3>Elegant Dining Table</h3>
+                    <p>A beautiful dining table that seats six comfortably.</p>
+                    <p class="price">$899.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="bed.jpg" alt="Luxury Bed" class="product-image">
+                    <h3>Luxury Bed</h3>
+                    <p>Experience the ultimate comfort with our luxury bed.</p>
+                    <p class="price">$749.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Quality Furniture! We are a passionate team dedicated to crafting high-quality furniture 
+            that enhances the beauty and comfort of your living spaces. With years of experience in the industry, 
+            we strive to provide furniture that combines durability, functionality, and style.
+        </p>
+        <p>
+            Our mission is to create pieces that not only serve their purpose but also tell a story. Every 
+            item we produce is a blend of traditional craftsmanship and modern design, ensuring that our 
+            furniture stands the test of time.
+        </p>
+
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Quality:</strong> We use only the finest materials to ensure that our furniture is built to last.</li>
+            <li><strong>Craftsmanship:</strong> Each piece is meticulously crafted by skilled artisans who take pride in their work.</li>
+            <li><strong>Customer Satisfaction:</strong> Our customers are at the heart of everything we do. We listen to your needs and strive to exceed your expectations.</li>
+            <li><strong>Sustainability:</strong> We are committed to environmentally friendly practices and source our materials responsibly.</li>
+        </ul>
+
+        <h2>Join Us on Our Journey</h2>
+        <p>
+            Explore our collection of exquisite furniture and find the perfect pieces for your home. 
+            We invite you to experience the quality and craftsmanship that sets us apart!
+        </p>
+        <button class="explore-button">Explore Our Collection</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <p>Email: <a href="mailto:Luxturecrp@gmail.com">Luxturecrp@gmail.com</a></p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Quality Furniture. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
